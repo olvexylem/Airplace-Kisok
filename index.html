@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplace Kiosk</title>
+
+    <link rel="stylesheet" href="kiosk.css">
+
+    <!-- type animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    
+    <div class="page" id="title-screen">
+        <div class="standard-heading">
+            <div class="heading-container-1">
+               <div class="blackBox"></div>
+            </div>
+            <div class="heading-container-2">
+                <div id="timestamp"></div>
+                <div id="homeBtn">
+                    <a class="barcode" id="code1"></a>
+                    <a class="barcode" id="code2"></a>
+                    <a class="barcode" id="code3"></a>
+                    <a class="barcode" id="code4"></a>
+                    <a class="barcode" id="code5"></a>
+                    <a class="barcode" id="code6"></a>
+                    <a class="barcode" id="code7"></a>
+                    <a class="barcode" id="code8"></a>
+                </div>
+                <a class="indexCode" id="codeIndex">PP. 4—81 INDEX NAVIGATION</a>
+            </div>
+            
+            <div class="heading-container-3">
+                <div class="colophon-container">
+                    <div class="colophon" id="colophon-btn"></div>
+                    <div class="colophon-content" id="colophon-content">
+                        <i>Airspace</i> was exhibited at Paradise on May 30, 2025, as part of <i>The Oasis of Serenity</i>. This research exploration and installation was constructed by Olivia Huynh, with guidance from Marthe Prins.<br> 
+                        <div class="details">
+                            Programming: Olivia Huynh<br>
+                            Typeface: ABC Diatype Variable<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="blurb-container">
+                    <div class="blurb-content" id="blurb-content">
+                        <i>Airspace</i> studies the visual aesthetics of private jet culture and explores a surrealist form of escapism to understand how it draws people into an illusory state of mind. 
+                    </div>
+                    <div class="blurb" id="blurb-btn"><span class="arrow">▶</span>BLURB</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bundle">
+            <div class="subpage" id="title">
+                DESIGN RESEARCH:&nbsp;<span id="typed"></span>
+                <div class="scroll-instruction">[ SWIPE TO SCROLL ]</div>
+            </div>
+            <div class="subpage" id="p1">
+                <div class="subpage-column">
+                    Without access to vehicles or locomotives, humans are able to walk across land and swim across water, but we cannot fly... until <b>aviation</b>.<br>
+                    The act of transcending air and gravity is revolutionary.
+                </div>
+            </div>
+            <div class="subpage" id="p2">
+                <div class="subpage-column">
+                    Private aviation, a symbol of ultimate luxury and status, is a stark contrast to our regular experiences of everyday life.
+                    A marvel and a high-key detriment to Mother Nature, what is this euphoric space?<br><br>
+                    <i>Airspace</i> studies the visual aesthetics of private jet culture and explores a surrealist form of escapism to understand how it draws people into an illusory state of mind.
+                </div>
+            </div>
+            <div class="subpage" id="p3">
+                <div class="subpage-column">
+                    Welcome to
+                    <p class="JournalTitle">Airplace Research Journal</p><br>
+                    Designed by Olivia Huynh<br>For Humanity</div>
+                <div class="subpage-column">
+
+                    <table class="tableOfContents">
+                        <tbody>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Introduction</td>
+                            <td class="chapterTitle" id="introBtn">Exploitative Productivity</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Chapter&nbsp;1</td>
+                            <td class="chapterTitle" id="chap1Btn">Wonderous Aviation</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Chapter&nbsp;2</td>
+                            <td class="chapterTitle" id="chap2Btn">Private Jet Culture</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Chapter&nbsp;3</td>
+                            <td class="chapterTitle" id="chap3Btn">Airport Design</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Chapter&nbsp;4</td>
+                            <td class="chapterTitle" id="chap4Btn">Luxury: The Commodification of the ‘Unnecessary’</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Chapter&nbsp;5</td>
+                            <td class="chapterTitle" id="chap5Btn">Manifestation of Airplace</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle"></td>
+                            <td class="chapterTitle" id="chap5-subBtn">&nbsp;&nbsp;&nbsp;&nbsp;* Installation Construction</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle">Conclusion</td>
+                            <td class="chapterTitle" id="reflectionBtn">Reflection</td>
+                          </tr>
+                          <tr class="chapterContainer">
+                            <td class="selector">▷</td>
+                            <td class="contentTitle"></td>
+                            <td class="chapterTitle" id="bibilographyBtn">Bibilography</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                </div>
+            </div>
+            <div class="subpage" id="p4">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="contentHeading">Introduction:<br> Exploitative Productivity</span>
+                    </div>
+                    <b>Exploitative Productivity</b> refers to a system or practice where productivity is <i>driven</i> by exploiting individuals, resources, or environments for maximum output—often at the cost of fairness, well-being, or sustainability.
+                    <br><br>This implies that the efforts and labor of individuals (often workers) or resources are <u>used in ways that benefit the exploiters</u>—namely, employers, corporations, or other powerful entities—while such individuals or resources are at risk of being overburdened, underpaid, or treated unfairly.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p5">
+                <div class="subpage-column">
+                    Olivia intuitively collected 20 images that she felt were relevant to the terms <i>exploitation</i> and <i>productivity</i>, respectively.<br><br>
+                    <table class="p5-keyTerms">
+                        <tbody>
+                          <tr>
+                            <td>Key&nbsp;themes&nbsp;&nbsp;&nbsp;</td>
+                            <td>→&nbsp;</td>
+                            <td>Making full use of/deriving benefit from a resource.</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>→&nbsp;</td>
+                            <td>Reimagining a product for an unintended use, such as: ‘belt dress’, ‘ready-made’, ‘stunt’—demonstrations of how passion can ignite profound creativity.</td>
+                          </tr>
+                        </tbody>
+                    </table><br>
+                    Drawing from first interests and images, Olivia arrived at two potential research question:&nbsp;
+                    <b>1.</b> Why do we need to do things? The concept behind of <i>curiosity</i>? Breaking down and examining the validity of the age old assumption that ‘child activities are <i>not productive</i> for adults’.
+                    <b>2.</b> Are tech accessories made to enhance the usability of main electronic gadgets actually efficient? (Image reference: power plug connected to power plug connected to power plug)
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/100img.webp">
+                        <div class="imgCaption"><i>First Intuitive Image Collage</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p6">
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">Comments from a group discussion in class:</p>
+                    <table class="p6-feedback">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>An increase in air traffic is linked to more severe environmental consequences.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>A friend's dad, a pilot, frequently experiences overwork, lack of holidays, and disrupted sleep. Pilots reportedly age faster and develop eye problems due to prolonged sun exposure in the cockpit.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Airline companies prioritize profits over employee well-being; KLM allegedly planned workforce reductions to increase profitability.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>The Schiphol strike highlighted harsh conditions: staff worked night shifts with no days off, leaving them too exhausted to enjoy their wages.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>In the 1970s, flying was a luxury experience, and airports were considered prestigious spaces.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/AirplaneCollage.webp">
+                        <div class="imgCaption"><i>Second Intuitive Image Collage: Aviation</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p7">
+                <div class="subpage-column">
+                    After this discussion, Olivia realised she wasn’t motivated to address aviation from an eco-friendly or worker-exploitation standpoint, because she was more drawn to the visual impact and aesthetic of aviation.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p8">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="thinSquareBraket">Chapter 1&nbsp;</span><br>
+                        <span class="contentHeading">Wonderous Aviation</span>
+                    </div>
+                    Olivia has an inkling that the visual impact and aesthetics of aviation resonate with the term <i>mystic</i>. Aviation is a spectacular invention that feels almost trance-like due to its stark contrast with the routines of daily life.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p9">
+                <div class="subpage-column">
+                    <p style="font-size: 25pt;">mystic</p>
+                    <p style="font-size: 12pt;">/ˈmɪstɪk/</p>
+                    <p style="font-size: 12pt;">noun</p>
+                    <p style="font-size: 12pt; margin-bottom: 1rem;">noun: mystic; plural noun: mystics</p>
+                    <p style="margin-bottom: 1rem;">a person who claims to attain, or believes in the possibility of attaining, <i>insight into mysteries transcending ordinary human knowledge</i>, as by direct communication with the divine or immediate intuition in a state of spiritual ecstasy.</p>
+                </div>
+            </div>
+            <div class="subpage" id="p10">
+                <div class="subpage-column">
+                    Research Question Development<br><br>
+                    ‘Often this is a good place to begin at: look at <i>what is at stake</i>? If something is at stake, it is being risked and might be lost or damaged.’ <b>So, what is at stake?</b> Human wonder.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p11">
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">With its countless environmental and societal issues… </p>
+                </div>
+                <div class="subpage-column">
+                    <table class="p11-stats">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>In 2022, aviation was responsible for <b>14% of nitrogen oxide (NOₓ) emissions</b> from the transport sector in Europe, contributing significantly to air pollution.&nbsp;<sup>[1]</sup></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Approximately <b>3 million people</b> in Europe are exposed to day-evening-night noise levels of 55 decibels or higher due to aircraft noise, which can lead to health issues such as sleep disturbance and cardiovascular problems.<sup>[2]</sup></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>The Dutch government has acknowledged issues of labor exploitation, particularly among migrant workers in various sectors, including aviation. Measures have been proposed to temporarily close companies that exploit migrant workers and violate their rights.<sup>[3]</sup></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>An “elite minority” of frequent flyers is responsible for the majority of aviation's climate impact. Studies suggest that <b>1% of the world's population accounts for 50% of commercial aviation emissions</b>, highlighting significant inequality in air travel's environmental footprint.<sup>[4]</sup></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subpage" id="p12">
+                <div class="subpage-column">
+                    Can we still justify humanity’s glorious pursuit for air travel? 
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p13">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/zep.webp">
+                        <div class="imgCaption"><i>The LZ 127 Graf Zeppelin departed on a flight under DELAG—the world’s first airline</i>, Germany 1930</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p14">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Research Question, Version No.1</p>
+                    I study <span class="highlight">(&nbsp;aviation design documentation&nbsp;)</span> because I want to <span class="highlight">(&nbsp;explore how the aviation industry promotes wonder and awe&nbsp;)</span> in order to understand <span class="highlight">(&nbsp;how the aviation industry conceal the prevalence labour exploitation and environmental damage&nbsp;)</span>.
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/BWposter.webp">
+                        <div class="imgCaption"><i>B/W Poster designed in reference to ‘Research Question, Version No.1’</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p15">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">Comments from a group discussion sparked by the poster:</p>
+                    <table class="p16-feeback">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>A wealthy passenger on Korean Air reportedly verbally abused flight attendants after not receiving the peanuts they requested.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Business schemes often involve selling unnecessary products that are made to seem useful.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Air Baltic reportedly charges passengers €15 to be addressed by a preferred name.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Carbon offsetting is offered as a paid option to mitigate flight-related emissions.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subpage" id="p16">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Research Question, Version No.2</p>
+                    I study <span class="highlight">(&nbsp;cargo aircrafts&nbsp;)</span> because I want to <span class="highlight">(&nbsp;uncover its cultural dynamics&nbsp;)</span> in order to understand <span class="highlight">(&nbsp;why people in power abuse it’s use&nbsp;)</span>.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p17">
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">Criminal Exploitation of Air Travel</p>
+                </div>
+                <div class="subpage-column">
+                    <table class="p16-feeback">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td><b>Drug trafficking via commercial flights:</b> According a UNODC Air Trafficking Report, organized crime networks exploit international air travel routes to smuggle synthetic drugs, including using unsuspecting passengers or corrupt airline staff.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td><b>Military aircraft used for smuggling:</b> According to 2005 ABC News article, a U.S. Air National Guard pilot and a sergeant used a C-5 Galaxy military transport plane to smuggle nearly 300,000 ecstasy pills from Germany to New York.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td><b>Airport staff aiding drug trafficking:</b> According to a 2024 NL Times article, six Schiphol Airport employees were arrested for allegedly helping smuggle cocaine through security and baggage systems.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subpage" id="p18">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="thinSquareBraket">Chapter 2&nbsp;</span><br>
+                        <span class="contentHeading">Private Jet Culture</span>
+                    </div>
+                    Olivia began questioning the <i>absurdity</i> of private jet culture after a conversation with her dad, who recalled news about actor Johnny Depp bringing his dogs to Australia without complying with the mandated 10-day quarantine, and the public backlash Prince Harry and Meghan Markle—outspoken environmentalists—faced for flying by private jet.                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p19">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Research Question, Version No.3</p>
+                    I study <span class="highlight">(&nbsp;private jet&nbsp;)</span> because I want to <span class="highlight">(&nbsp;uncover its cultural dynamics&nbsp;)</span> in order to understand <span class="highlight">(&nbsp;how the evasion of private jet regulations impacts productivity&nbsp;)</span>.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p20">
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">How does this relate to <i>exploitative productivity</i> ?</p>
+                    <table class="p21-table">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>Negative environmental impact—“Calculations suggest that people traveling in their own private jets leave a <b>disproportionate carbon footprint</b> relative to those who use commercial jetliners or other means of travel”</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>A lack of regulation <b>allows last-minute issues to arise</b>, risking safety, delaying procedures, and wasting resources.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p21">
+                <div class="subpage-column">
+                    <b>Avionco's Six Private Jet Regulations</b><br>
+                </div>
+                <div class="subpage-column">
+                    <table class="p22-regulations">
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="regulationTitle">Safety and Maintenance Regulations</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Airworthiness Certificates<br>
+                                b.&nbsp;&nbsp;&nbsp;Regular Inspections and Maintenance<br>
+                                c.&nbsp;&nbsp;&nbsp;Pilot and Crew Training
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="regulationTitle">Environmental Regulations</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Emissions Standards<br>
+                                b.&nbsp;&nbsp;&nbsp;Noise Regulations<br>
+                                c.&nbsp;&nbsp;&nbsp;Sustainable Aviation Fuel (SAF)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td class="regulationTitle">Customs and Immigration Compliance</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Pre-Clearance Requirements<br>
+                                b.&nbsp;&nbsp;&nbsp;Documentation<br>
+                                c.&nbsp;&nbsp;&nbsp;Customs Declarations
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td class="regulationTitle">Operational and Airspace Regulations</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Flight Plans<br>
+                                b.&nbsp;&nbsp;&nbsp;Slot Restrictions<br>
+                                c.&nbsp;&nbsp;&nbsp;Airspace Restrictions
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td class="regulationTitle">Insurance and Liability</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Liability Insurance<br>
+                                b.&nbsp;&nbsp;&nbsp;Hull Insurance<br>
+                                c.&nbsp;&nbsp;&nbsp;Regulatory Compliance
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td class="regulationTitle">Security Regulations</td>
+                            <td class="regulationDetails" style="padding-bottom: 0.5rem;">
+                                a.&nbsp;&nbsp;&nbsp;Background checks<br>
+                                b.&nbsp;&nbsp;&nbsp;Screening Procedures<br>
+                                c.&nbsp;&nbsp;&nbsp;Security Plans
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subpage" id="p22">
+                <div class="subpage-column">
+                    <p style="margin-bottom: 1rem;">Initial Visual Concept: <b>Power Hierarchy</b></p>
+                    A set of fictional <b>status labels</b> that each correspond to a <b>clearance level</b> that can bypass certain private jet regulations.<br><br>
+                    Possible status labels may include: 
+                    Billionaires, 
+                    CEOs and Executives of Major Corporations, 
+                    Celebrities, 
+                    High-net-worth Individuals (HNWIs), 
+                    Entrepreneurs and Business Owners, 
+                    Royalty, 
+                    Political Leaders and Diplomats, 
+                    Philanthropists, 
+                    High-profile Investors and Hedge Fund Managers, 
+                    Top-tier Athletes.
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="imgFlex">
+                                <img class="imgZaha" src="images/simu1.webp">
+                                <img class="imgZaha" src="images/simu2.webp">
+                                <img class="imgZaha" src="images/simu3.webp">
+                                <img class="imgZaha" src="images/simu4.webp">
+                        </div>
+                        <div class="imgCaptionFlex">Inspiration: @xxvnii — <i>3D Animated Roleplaying Simulator (Scene Stills)</i>, 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p23">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="thinSquareBraket">Chapter 3&nbsp;</span><br>
+                        <span class="contentHeading">Airport Design</span>
+                    </div>
+                    Utilitarianism is an ethical theory that <b>determines right from wrong</b> by <i>focusing on outcomes</i>.
+                    It is a form of consequentialism. Utilitarianism holds that the most ethical choice is the one that will produce the greatest good for the greatest number.                <div class="subpage-column"></div>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p24">
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgCollage" src="images/original.avif">
+                    <div class="imgCaption"><i>WA Flight Center, JFK</i>, 1960s</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p25">
+                <div class="subpage-column">
+                    TWA Flight Center, JFK, evokes the excitement of air travel. Dynamic curves. Represents the pinnacle of the glamour of air travel in the early 1960s… ‘the innocence before Vietnam… still basking in the victory of WWII’… the expression of flight… and the sense of discovery that comes with air travel. ‘Weren’t meant to just walk-through… but linger.’
+                    <p style="font-size: 12pt; margin-top: 1rem;">(Source: Architectural Digest)</p>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p26">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgZaha" src="images/Zaha_painting.webp">
+                        <div class="imgCaptionZaha">Zaha Hadid, <i>The Peak Project, Hong Kong, China (Exterior perspective)</i>, 1991</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgZaha" src="images/Daxing.webp">
+                        <div class="imgCaptionZaha">Inside Beijing's Daxing International Airport Terminal by Zaha Hadid</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p27">
+                <div class="subpage-column">
+                    Zaha Hadid, architect of Beijing Daxing International Airport, and painter, drew inspiration from Russian avant-garde art, including Suprematism*. Through her paintings she <b>explores spaces that architecture hasn’t considered before</b>, so these paintings foreshadow her early built work such as the Vitro Fire Station (Switzerland) and the Rosenthal Center for Contemporary Art (Cincinnati), which are all very hard-edged and rectilinear (containing straight lines) and don’t employ those soft curves yet. At the Maxi Museum (Rome), Zaha starts to soften her form and creates these more curval linear shapes which over the years leads to the astonishing forms that she employs at Daxing Airport.
+                    <br><br>
+                    * The Supremacists were a group of artists focused on the supremacy of pure artistic feeling over the representation of physical objects.
+                    <p style="font-size: 12pt; margin-top: 1rem;">(Source: Architectural Digest)</p>
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p28">
+                <div class="subpage-column">
+                    Personal Experiences with Luxurious Travel
+                </div>
+                <div class="subpage-column">
+                    As a child (and now), my family and I have almost always flown with Singapore Airlines—<b>a Skytrax certified 5-star airline</b> and currently listed among the <b>Top 50 World's Most Admired Companies</b> by Fortune Magazine (USA).<sup>[5]</sup><br><br>
+                    I grew up in Singapore, so it felt normal to fly with Singapore Airlines, but it was most certainly an above normal experience that I would soon realise once I began flying independently with other airline companies.
+                </div>
+            </div>
+            <div class="subpage" id="p29">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/well-rested_image-card-2-column.avif">
+                    <div class="imgCaption"><i>New Regional Business Class, Singapore Airline</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p30">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/singapore-airlines-suites-class-neu-a380-2-1600x900-1.webp">
+                    <div class="imgCaption"><i>First Class Suite, Singapore Airlines</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p31">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/Changi-airport.webp">
+                    <div class="imgCaption"><i>Rain Vortex, Jewel Terminal</i>, Changi Airport, Singapore</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p32">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/Discovery-Slide.webp">
+                    <div class="imgCaption"><i>Discovery Slides at the Canopy Park, Jewel Terminal</i>, Changi Airport, Singapore</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p33">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/Singapore-Airport-Changi-Terminal-BOIFFILS-Garden-City-23.webp">
+                    <div class="imgCaption"><i>Terminal 2 Arrivals</i>, Changi Airport</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p34">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgFull" src="images/Singapore-Airlines-SilverKris-First-Class-Lounge-Melbourne-Point-Hacks-by-Victoria-Kyriakopoulos-02.webp">
+                    <div class="imgCaption"><i>Singapore Airlines First Class Lounge, Melbourne</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p35">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div>
+                    <img class="imgCollage" src="images/DSC_3071.webp">
+                    <div class="imgCaption"><i>Singapore Airlines SilverKris Lounge</i>, London Heathrow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p36">
+                <div class="subpage-column">
+                    As a child, I couldn’t appreciate the impact that luxurious design and services could have on a person’s sense of self. I remember finding the glitz and glamour unnecessarily daunting. The decoration and performance, attracting status-conscious individuals with inflated self-images, still make me question the <i>true</i> meaning of <b>luxury and elegance</b>.                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p38">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="thinSquareBraket">Chapter 4&nbsp;</span><br>
+                        <span class="contentHeading">Luxury: The Commodification of the ‘Unnecessary’</span>
+                    </div>
+                    Luxury can be defined as a state of great comfort or elegance… but what do we mean by <i>great comfort</i>? Does it correlate to visual appearances or mental well being?
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p37">
+                <div class="subpage-column">
+                    I’d like to believe that luxury, in its truest form, relates to <b>our closeness with nature</b> (our innate human nature and the natural world), as opposed to an excessive consumption or overly elaborate display of status-defining amenities and services.<br><br>
+                    For me, <b>harmony lies in our spiritual alignment with both our bodies and our immediate environment</b>. The more disconnected we are from this, the less grounded we become in reality and in our understanding of self.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p38">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atmospheric Moodboard: Majestic Mystic
+                </div>
+            </div>
+            <div class="subpage" id="p39">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/mood1.webp">
+                        <div class="imgCaptionMood">Zhang Kechun, <i>The Yellow River</i>, a photograph shot in Chengdu, China 2013</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p40">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                        <div class="imageContainer">
+                        <img class="imgMood" src="images/mood2.webp">
+                    <div class="imgCaptionMood">Faia Fractals, <i>Alien Parasite</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p41">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood2" src="images/mood3.webp">
+                        <div class="imgCaptionMood2">Piotr Jabłoński, <i>Elric</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p42">
+                <div class="subpage-column">
+                    <i>It is as clear as noon-day, that man, by his industry, changes the forms of the materials furnished by Nature, in such a way as to make them useful to him. The form of wood, for instance, is altered, by making a table out of it. Yet, for all that, the table continues to be that common, every-day thing, wood. But, so soon as it steps forth as a commodity, it is changed into something <b>transcendent</b>.</i>
+                    <!-- <br><br> — Marx, Karl (1887). Capital Volume One. -->
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p43">
+                <div class="subpage-column">
+                    <i>A commodity is therefore a <b>mysterious</b> thing, simply because in it the social character of men’s labour appears to them as an objective character stamped upon the product of that labour...</i>
+                    <br><br>
+                    <i>This is the reason why the products of labour become commodities—social things whose qualities are at the same time <u>perceptible and imperceptible</u> by the senses. In the same way the light from an object is perceived by us not as the subjective excitation of our optic nerve, but as the objective form of something outside the eye itself. </i>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p44">
+                <div class="subpage-column">
+                    <i>But, in the act of seeing, there is at all events, an actual passage of light from one thing to another, from the external object to the eye. There is a physical relation between physical things. But it is different with commodities. There, the existence of the things quâ commodities, and the value relation between the products of labour which stamps them as commodities, have absolutely <u>no connection</u> with their physical properties and with the material relations arising therefrom.</i>
+                    <br><br> — Marx, Karl (1887). Capital Volume One.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p45">
+                <div class="subpage-column">
+                    Under capitalism, human relationships (like labor and exchange) are disguised as relationships between objects — making the economy seem <i>natural</i>, rather than something shaped by people.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p46">
+                <div class="subpage-column">
+                    Marx turns to religion as a metaphor—specifically, the <i>mysterious</i> or <i>irrational</i> aspects of it. In religion, humans create ideas (like gods), but then treat those creations as if they are real, living entities with power, separate from human control, that can interact with us with each other. Similarly, under capitalism, people create goods through labor, but then treat those goods (commodities) as if they possess value and meaning on their own, independent of the people who made them. 
+                    <br><br>
+                    Marx calls this illusion <b>commodity fetishism</b>.  
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p47">
+                <div class="subpage-column">
+                    In the realm of aviation, airports like <b>Singapore Changi</b> transcend their basic function as transit hubs, transforming into curated spaces where design and experience are <u>meticulously commodified</u>. Here, the spectacle of sleek architecture, ambient lighting, and retail luxury redefines air travel—not as a means of movement, but as <i>an aspirational lifestyle</i>, turning what was once purely utilitarian into an aesthetic that obscures the complex systems of labor and logistics behind it.
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/Ministry-of-Design-Durasport_dezeen_2364_col_2-1704x1137.webp">
+                        <div class="imgCaption"><i>Ministry of Design completes futuristic sports store in Singapore Airport</i>, 2019</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p48">
+                <div class="subpage-column">
+                    <i>...'Where do objects go when they no longer have any use?' we might reply that they normally go in the dustbin, but that reply would be inadequate since the question is metaphysical. Bergson asked me the same question and replied metaphysically: 
+                    <br><br>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that which ceased to be useful simply begins to <span style="font-style: normal;">be</span>.</b></i>
+                    <br><br>
+                    — (Deleuze 1986:185)
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p49">
+                <div class="subpage-column">
+                    Olivia briefly considers the notion of <b>uselessness</b> in the context of excessive consumerism driven by commodity fetishism.    
+                    <br><br>
+                    * Uselessness refers to the inability to fulfill, or the lack of expectation to achieve, an intended purpose or desired outcome—and can, in itself, be amusing or disruptive.                
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgPlug" src="images/8201d2913c9156ce23e2125ce3e23fb6.webp">
+                        <div class="imgCaptionPlug">Artwork by Matthieu Lavanchy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p50">
+                <div class="subpage-column">
+                    Are private jets useless?
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p51">
+                <div class="subpage-column">
+                    No. <br><br>
+                    Apart from useful travel practicalities, such as:
+                    <table class="p48-jetprac">
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>They serve specific functions: rapid travel, flexible scheduling, reaching remote locations, and ensuring privacy for business or personal reasons.</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;&nbsp;•&nbsp;&nbsp;</td>
+                            <td>For certain individuals (e.g. diplomats, emergency responders, or executives), they can *optimize time* and enable access not easily available via commercial airlines.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    Private jets elicit awe and fascination.
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/donald-trump-plane_3385886b.webp">
+                        <div class="imgCaption">The Telegraph, <i>Donald Trump and his Boeing 757-200</i>, 2015</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p52">
+                <div class="subpage-column">
+                   Must everything be practical?
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p53">
+                <div class="subpage-column">
+                    <i>What is called a reason for living is also an excellent reason for dying.</i>
+                    <br><br>
+                    —Albert Camus, The Myth of Sisyphus and Other Essays
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p54">
+                <div class="subpage-column">
+                    Luxury is an <b>illusion</b> with the power to place us in an escapist, <i>trance-like state</i>. It's not always about opulence—it’s often about how <u>seamlessly</u> an experience fits into our desires and self-perception.<br><br>
+                    According to a Forbes article, futurist Jared Weiner argues that a <i>luxury experience</i> is <b>no longer defined by extravagance alone</b>. Instead, it's created when consumers are offered something that saves them time, feels personally tailored, and comes from a trusted source they want to be associated with. This, he says, is the new definition of luxury—and for the right consumer, it's a powerful driver of desire and spending.
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p55">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="thinSquareBraket">Chapter 5&nbsp;</span><br>
+                        <span class="contentHeading">Manifestation of Airplace</span>
+                    </div>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p56">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Installation Idea No.1</p>
+                    Air cargo boxes on wooden pellets, directing cut in half (like a cake) to display an x-ray view of its contents.
+                    <br><br>
+                    Inside these boxes are ‘luxurious’ things, demonstrating a behind-the-scenes snapshot of the journey through which ‘luxurious’ things are shipped for consumption, to reveal environmental and labour related issues that the blind consumer dismisses and neglects.
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" src="images/installation1.webp">
+                        <div class="imgCaption">Sketch: Installation Idea No.1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p57">
+                <div class="subpage-column">
+                    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept Moodboard<br><br>
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/Homage.webp">
+                        <div class="imgCaptionMood">Inspiration: <i>Homage to New York</i> (1960), a self-destructive machine that renders itself useless by systematically destroying its own functionality.</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    
+                </div>
+            </div>
+            <div class="subpage" id="p58">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood2" src="images/egg stroller.webp">
+                        <div class="imgCaptionMood2">Unknown source</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/fatcar.webp">
+                        <div class="imgCaptionMood">Erwin Wurm, <i>Flying Car UFO</i>, 2010</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p59">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/lockheed-concept-ring-wing-airplane-v0-f2unmgk4eakb1.webp">
+                        <div class="imgCaptionMood"><i>Lockheed Concept Ring Wing Aircraft</i></div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood2" src="images/metal helmet.webp">
+                        <div class="imgCaptionMood2">Subodh Gupta, <i>Hamlet’s Helmet</i>, 2003 (Polished stainless steel)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p60">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/trianglechair.webp">
+                        <div class="imgCaptionMood">Gift of Rob Beyer, <i>Mies Chair and Ottoman</i>, 1969</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/car.webp">
+                        <div class="imgCaptionMood"><i>Art of Mobility</i>, developed by the design students at Rigoletti in collaboration with Nissan Design America (NDA), 2012</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p60">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood2" src="images/CasaOrganica_AnnaDave_009.webp">
+                        <div class="imgCaptionMood2">Anna Dave, <i>Casa Organica</i></div>
+                    </div>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p61">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Installation Idea No.2</p>
+                    Private Jet Storyline, 3D Simulation.
+                </div>
+                <div class="subpage-column">
+                </div>
+            </div>
+            <div class="subpage" id="p62">
+                <div class="subpage-column">
+                    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blender Investigation
+                    <br><br>
+                    <div class="imageContainer">
+                        <img class="imgMood" style="opacity: 75%;" src="images/blendernote1.webp">
+                        <div class="imgCaptionMood2"></div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" style="opacity: 75%;" src="images/blendernote2.webp">
+                        <div class="imgCaptionMood2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p63">
+                <div class="subpage-column">
+                    Simulation Storyboard<br><br>
+                    <table class="p63-story">
+                        <tbody>
+                          <tr>
+                            <td>1&nbsp;—&nbsp;</td>
+                            <td><i>Theres a global climate crisis, you need to evaluate with your private jet</i></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="storyBox">
+                            <img class="imgStory" src="images/flood.webp">
+                        </div>
+                        <div class="imgCaptionStory">1/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p64">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="storyBox">
+                            <img class="imgStory" src="images/smog.webp">
+                        </div>
+                        <div class="imgCaptionStory">2/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p65">
+                <div class="subpage-column">
+                    <table class="p63-story">
+                        <tbody>
+                          <tr>
+                            <td>2&nbsp;—&nbsp;</td>
+                            <td><i>You take an Uber Copter to the private aircraft hangar</i></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="storyBox">
+                            <img class="imgStory" src="images/elevator.webp">
+                        </div>
+                        <div class="imgCaptionStory">3/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p66">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="storyBox">
+                            <img class="imgStory" src="images/hanger.webp">
+                        </div>
+                        <div class="imgCaptionStory">4/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p67">
+                <div class="subpage-column">
+                    <table class="p63-story">
+                        <tbody>
+                          <tr>
+                            <td>3&nbsp;—&nbsp;</td>
+                            <td><i>You enter your private jet</i></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                            <div class="storyBox">
+                                <img class="imgStory" src="images/jet1.webp">
+                            </div>
+                        <div class="imgCaptionStory">5/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p68">
+                <div class="subpage-column"></div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <div class="storyBox">
+                            <img class="imgStory" src="images/jet2.webp">
+                        </div>
+                        <div class="imgCaptionStory">6/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p69">
+                <div class="subpage-column">
+                    <table class="p63-story">
+                        <tbody>
+                          <tr>
+                            <td>4&nbsp;—&nbsp;</td>
+                            <td><i>Arrivals (?)</i></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                            <div class="storyBox">
+                                <img class="imgStory" src="images/arrivals.webp">
+                            </div>
+                        <div class="imgCaptionStory">7/7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p70">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" style="border-radius: 4pt;" src="images/lift1.webp">
+                        <div class="imgCaption">Olivia's First 3D Elevator Blender Render Attempt, 1/2</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgCollage" style="border-radius: 4pt;" src="images/lift2.webp">
+                        <div class="imgCaption">Render Shading Setup, 2/2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p71">
+                <div class="subpage-column">
+                    <p class="QuestionAttempt">Installation Idea No.3</p>
+                    Airplane setup.
+                    <br><br>
+                    Three bespoke steel airplane window frames are suspended from the ceiling in front of TV screens displaying atmospheric landscapes. Each window is paired with a chair, mimicking the interior experience of an airplane cabin.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p72">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgPlug" src="images/airplanesketch.webp">
+                        <div class="imgCaptionPlug"><i>Airplace</i>, Exhibition Installation Sketch</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <table class="p72-materials">
+                        <tbody>
+                          <tr>
+                            <td>3 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Medium TV + stand <i>[booked]</i></td>
+                          </tr>
+                          <tr>
+                            <td>3 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Bespoke Steel Airplane Window Frame</td>
+                          </tr>
+                          <tr>
+                            <td>6 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Metal Clips/Clamps</td>
+                          </tr>
+                          <tr>
+                            <td>6 × (strips)&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Heavy Duty Metal Wire</td>
+                          </tr>
+                          <tr>
+                            <td>3 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>Miscellaneous Chairs</td>
+                          </tr>
+                          <tr>
+                            <td>1 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>iPad <i>[booked]</i></td>
+                          </tr>
+                          <tr>
+                            <td>1 ×&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>iPad Stand (Pedestal)</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subpage" id="p73">
+                <div class="subpage-column">
+                    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construction Process
+                    <br><br>
+                    <div class="imageContainer">
+                        <img class="imgMood2" src="images/metal1_whiteboard.webp">
+                        <div class="imgCaptionMood2" style="text-indent: -5pt; margin-left: 10pt;">* Bespoke steel airplane window frame — 1 : 1 scale sketch on whiteboards</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal2_sketch.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* Marking the outline of an airplane window onto a steel panel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p74">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal3_jigsaw.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* An airplane window opening was cut from pre-measured steel panels using a <b>jigsaw</b> and finished with a file</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal4_hole.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* 5mm holes are drilled for rivets around the airplane window cutout</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p75">
+                <div class="subpage-column">
+                     <div class="imageContainer">
+                        <img class="imgMood" src="images/metal5_prebend.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* Pre-bending lineup</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal6_roller.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* Bending Steel Airplane Window Frame</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p76">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal7_flapbend.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* A 40mm flap is folded upward along the top and bottom edges of the window panel to provide balanced suspension during hanging</div>
+                    </div>
+                </div>
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal8_rivet.webp">
+                        <div class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* 5mm rivets placed in the drilled holes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="subpage" id="p76">
+                <div class="subpage-column">
+                    <div class="imageContainer">
+                        <img class="imgMood" src="images/metal9_almostdone.webp">
+                        <p class="imgCaptionMood" style="text-indent: -5pt; margin-left: 10pt;">* Completed Steel Airplane Window Frames (without indent on flaps for metal clips)</p>
+                    </div>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p77">
+                <div class="subpage-column">
+                   [insert TV screen visual planning]
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p78">
+                <div class="subpage-column">
+                    <div class="contentHeading-container">
+                        <span class="contentHeading">Reflection</span>
+                        <br><br>
+                        In this research exploration, I examined a set of concepts that, while familiar to many, still exert an abstract, psychological pull—namely, aviation and luxury. By engaging with the logic of environmental goals and ethical labor practices, I began to question the original purpose of aviation and whether humans are, at their core, logical beings.
+                    </div>
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p79">
+                <div class="subpage-column">
+                    Though aviation is rooted in utilitarian function, its origins are deeply tied to a sense of curiosity—our desire to explore the unknown. Private jet culture, in all its luxury and absurd convenience, can be seen as an extension of that same drive. It reflects an ambitious human initiative to push possibility to its outer limits. However illusory, the aesthetics of private aviation—and of aviation more broadly—possess a kind of immersive, mind-altering power. They evoke wonder and draw our attention to the present moment, offering a psychological escape and emotional resonance that logic alone cannot explain.
+                    <br><br>
+                    I do not condone environmental degradation or labor exploitation. Rather, I believe that aviation—and life itself—should not always be evaluated solely through a logical lens, but also through an intuitive, emotional one.
+                </div>
+                <div class="subpage-column"></div>
+            </div>
+            <div class="subpage" id="p80">
+                <div class="subpage-column" style="text-align: center;">
+                    <i>Airplace</i> Research Journal was programmed by Olivia Huynh.
+                </div>
+            </div>
+            <div class="subpage" id="p81" style="font-size: 10pt;">
+                <div class="subpage-column">
+                    <span style="letter-spacing: 2pt;">BIBILOGRAPHY</span>
+                    <br><br>
+                    <p class="source">ABC News. (2005, October 26). <i>U.S. soldiers involved in drug smuggling ring.</i> https://abcnews.go.com/WNT/US/story?id=1252876</p>
+                    <br>
+                    <p class="source"><sup>[1]</sup><i>Air pollution.</i> (2024, October 10). European Environment Agency. Retrieved May 26, 2025, from https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems/air-pollution?utm_source=chatgpt.com</p>
+                    <br>
+                    <p class="source">Architectural Digest. (2024, October 8). <i>The Secret to Good Airport Design: Aesthetic vs Efficiency | Architectural Digest</i> [Video]. YouTube. https://www.youtube.com/watch?v=XVK6urfqqsg&t=751s</p>
+                    <br>
+                    <p class="source">Avionco. (2024, September 10). <i>6 Regulatory Challenges Private Jet Owners Need to Understand.</i> Retrieved May 26, 2025, from https://avionco.com/6-regulatory-challenges-private-jet-owners-need-to-understand/</p>
+                    <br>
+                    <p class="source">Camus, A. (2012). <i>The Myth of Sisyphus and Other Essays.</i> Vintage.</p>
+                    <br>
+                    <p class="source"><sup>[4]</sup>Carrington, D. (2021, March 31). <i>Elite minority of frequent flyers 'cause most of aviation's climate damage'.</i> The Guardian. https://www.theguardian.com/world/2021/mar/31/elite-minority-frequent-flyers-aviation-climate-damage-flights-environmental?utm_source=chatgpt.com</p>
+                    <br>
+                    <p class="source">Darroch, G. (2025, February 11). <i>Van Hijum: Companies that exploit migrant workers face closure.</i> DutchNews.nl. https://www.dutchnews.nl/2025/02/van-hijum-companies-that-exploit-migrant-workers-face-closure/?utm_source=chatgpt.com</p>
+                    
+                </div>
+                <div class="subpage-column">
+                    <br><br><br>
+                    <p class="source"><sup>[2]</sup><i>Finding the sweet spot: Optimising air travel for noise and fuel consumption.</i> (2024, November 22). SESAR Joint Undertaking. Retrieved May 26, 2025, from https://www.sesarju.eu/news/finding-sweet-spot-optimising-air-travel-noise-and-fuel-consumption?utm_source=chatgpt.com</p>
+                    <br>
+                    <p class="source">Kestenbaum, R. (2021, December 16). <i>The Definition Of Luxury Is Expanding And Changing.</i> Forbes. Retrieved May 26, 2025, from https://www.forbes.com/sites/richardkestenbaum/2021/12/16/the-definition-of-luxury-is-expanding-and-changing/</p>
+                    <br>
+                    <p class="source">Marx, K. (2007). <i>Chapter One: Commodities. In Capital | A Critique of Political Economy.</i> Progress Publishers, Moscow, USSR;. https://www.marxists.org/archive/marx/works/1867-c1/ch01.htm#S4</p>
+                    <br>
+                    <p class="source"><sup>[3]</sup>NL Times. (2024, May 31). <i>Six airport employees arrested for cocaine trafficking though Schiphol.</i> https://nltimes.nl/2024/05/31/six-airport-employees-arrested-cocaine-trafficking-though-schiphol</p>
+                    <br>
+                    <p class="source"><sup>[5]</sup>Singapore Airlines. (2024, January). <i>Our Awards.</i> Retrieved May 26, 2025, from https://www.singaporeair.com/en_UK/es/flying-withus/our-story/awards/</p>
+                    <br>
+                    <p class="source">Thoburn, N. (2013). <i>Useless objects | Commodities, collections and fetishes in the politics of objects. In Objects and Materials | A Routledge Companion</i> (p. 208–217). Routledge.</p>
+                    <br>
+                    <p class="source">United Nations. (n.d.). <i>AIR TRAFFICKING. United Nations : UN Toolkit on Synthetic Drugs.</i> Retrieved May 26, 2025, from https://syntheticdrugs.unodc.org/syntheticdrugs/en/air-trafficking/index.html</p>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+    
+
+    <script src="kiosk.js"></script>
+</body>
+</html>
